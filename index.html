@@ -19,9 +19,12 @@
     <div id="result"></div>
     <div id="result2"></div>
     <script type="text/javascript">
+
         function setParameter(event) {
+            population = [];
             console.clear();
             event.preventDefault();
+
             var popSize = document.querySelector('#populationSize');
             result = document.querySelector('#result');
             result2 = document.querySelector('#result2');
