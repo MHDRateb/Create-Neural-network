@@ -237,9 +237,11 @@ function test(population) {
     console.log("best set of weights ", fittest)
     console.log("_______________");
 
-    results.innerText ="The fittest weights set in the last generation is "+"\n";   
+    results.innerText =" execuation number  "+counter+"\n";
+    results.innerText +="The fittest weights set in the population is "+"\n";   
     results.innerText +=JSON.stringify(fittest,null,2);
     result.appendChild(results);
+    
 
     function applyWeigth(inputLayer, hiddenLayer, fittest) {
 
@@ -279,6 +281,7 @@ function test(population) {
             input: [1, 1],
             output: 0
         }];
+        results2.innerText ="input-output for execuation number  "+counter+ "\n";
     for (var iii = 0; iii < Xor.length; iii++) {
         
         console.log("the input",iii+1,Xor[iii].input);

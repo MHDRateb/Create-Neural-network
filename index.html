@@ -19,19 +19,23 @@
     <div id="result"></div>
     <div id="result2"></div>
     <script type="text/javascript">
-
+    var counter=0;
         function setParameter(event) {
+            counter+=1;
             population = [];
             console.clear();
-            event.preventDefault();
+            event.preventDefault();  
+          
+        var popSize = document.querySelector('#populationSize');
 
-            var popSize = document.querySelector('#populationSize');
-            result = document.querySelector('#result');
-            result2 = document.querySelector('#result2');
-            results = document.createElement("p");
-            results2 = document.createElement("p");
+         result = document.querySelector('#result');
+         result2 = document.querySelector('#result2');
+        results = document.createElement("p");
+        results2 = document.createElement("p");
 
-            populationSize = popSize.value;
+
+        populationSize=popSize.value;
+
             main();
         }
     </script>
