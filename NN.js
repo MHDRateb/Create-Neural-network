@@ -12,7 +12,7 @@ var population = [];
 
 var network;
 
-var populationSize = 10;
+var populationSize;
 
 
 
